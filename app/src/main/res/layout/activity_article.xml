@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Article">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewBG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Source"
+            android:textColor="#bababa"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewBG"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTittle"
+            app:layout_constraintVertical_bias="0.41" />
+
+        <TextView
+            android:id="@+id/tvTittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Omicron is now the dominant strain of coronavirus in the US, according to the CDC - CNN"
+            android:textColor="#f2f2f2"
+            android:textSize="29sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvcontent"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewBG"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toEndOf="@+id/imageViewBG"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBG"
+            app:layout_constraintVertical_bias="0.758" />
+
+        <TextView
+            android:id="@+id/tvcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Omicron is now the dominant strain of coronavirus in the US, according to the CDC - CNN"
+            android:textColor="#f2f2f2"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewBG"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toEndOf="@+id/imageViewBG"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBG"
+            app:layout_constraintVertical_bias="0.896" />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Source"
+            android:textColor="#bababa"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewBG"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTittle"
+            app:layout_constraintVertical_bias="0.405" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
